@@ -1,0 +1,25 @@
+    <link rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/star-rating.js" type="text/javascript"></script>
+
+
+
+    <input id="rating-input" type="number" value="3" />
+      
+    
+    
+    <script>
+    jQuery(document).ready(function () {
+        $('#rating-input').rating({
+              min: 0,
+              max: 5,
+              step: 1,
+              size: 'xs',
+              showClear: false,
+			  disabled: true, 
+              showCaption: false
+           });
+       });
+    </script>
